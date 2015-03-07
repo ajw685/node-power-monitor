@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Power Data
+    ul
+        each entry, i in powerdata
+            li
+                h3 Time: #{entry.time} and kw: #{entry.kw}
